@@ -1,4 +1,5 @@
 //====================== AUTHENTICATION ==========================
+
 node('master'){
 	
 	stage 'testAuthentication'
@@ -27,6 +28,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmo
 }
 
 //====================== EVENTS ==========================
+
 node('master'){
 	
 	stage 'testEvents'
@@ -62,6 +64,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmo
 }
 
 //====================== NOTIFICATIONS ==========================
+
 node('master'){
 	
 	stage 'testNotifications'
@@ -88,6 +91,7 @@ node('changemore'){
 }
 
 //====================== Manager ==========================
+
 node('master'){
 	
 	stage 'testManager'
